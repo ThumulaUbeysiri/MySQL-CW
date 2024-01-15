@@ -357,7 +357,7 @@ select Appointment.AppointID,PetOwner.POID,PetOwner.LName as PetOwner_Name,Appoi
 Appointment inner join PetOwner on Appointment.POID=PetOwner.POID
 where Appointment.DID = 'D006'
 
---group by and habing
+--group by and having
 
 select PetOwner.POID,PetOwner.LName,count(*) as PetCount from 
 pet inner join PetOwner on pet.POID=PetOwner.POID
